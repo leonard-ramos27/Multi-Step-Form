@@ -1,9 +1,10 @@
+import getImageURL from "../utils/image-util"
 
 const SuccessMessage = () => {
     return (
         <div className="success-div text-center d-flex flex-column align-items-center">
             <img 
-                src="./src/assets/images/icon-thank-you.svg" 
+                src={getImageURL("icon-thank-you.svg")}
                 className="mb-3 mb-md-4"
                 alt="Thank you icon" />
             <h1 className="mb-2 mb-md-3">Thank you!</h1>

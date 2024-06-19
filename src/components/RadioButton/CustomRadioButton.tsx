@@ -1,5 +1,6 @@
 import { ChangeEvent } from "react"
 import "./CustomRadioButton.css"
+import getImageURL from "../../utils/image-util"
 
 type CustomRadioButtonProps = {
     name: string,
@@ -23,7 +24,9 @@ const CustomRadioButton = ({name, id, checked, onChange,price, text, icon}: Cust
                 id={name}
                 checked={checked}
                 onChange={onChange} />
-            <img src={`./src/assets/images/${icon}`} alt="Plan Icon" />
+            <img 
+                src={getImageURL(icon)} 
+                alt="Plan icon" />
             <div className="info">
                 <span className="name">{name}</span>
                 <span className="price">{price}</span>
