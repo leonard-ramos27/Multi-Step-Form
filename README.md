@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link to Solution]()
-- Live Site URL: [Link to Live Site]()
+- Solution URL: [Link to Solution](https://github.com/leonard-ramos27/Multi-Step-Form.git)
+- Live Site URL: [Link to Live Site](https://leonard-ramos27.github.io/Multi-Step-Form/)
 
 ## My process
 
