@@ -1,0 +1,67 @@
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+}
+
+.label-radio{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    transition: border .5s ease;
+}
+
+.label-radio:has(input[type="radio"]:checked),
+.label-radio:hover{
+    border: 1px solid hsl(213, 96%, 18%) !important;
+}
+
+.label-radio img{
+    margin-right: 1rem;
+}
+
+.label-radio .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.label-radio .info .name{
+    color: hsl(213, 96%, 18%);
+    font-size: 1.02rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.label-radio .info .price{
+    color: hsl(231, 11%, 63%);
+    font-size: .9rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+}
+
+.label-radio .info .text{
+    color: hsl(213, 96%, 18%);
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .label-radio{
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 1.3rem 1rem;
+    }
+
+    .label-radio img{
+        margin-bottom: 3rem;
+    }
+}
