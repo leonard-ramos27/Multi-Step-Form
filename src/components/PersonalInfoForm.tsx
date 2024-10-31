@@ -22,7 +22,7 @@ const PersonalInfoForm = ({formData, goNext, updateData, errors, updateErrors}: 
 
     const validateFormat = (field: string, value: string) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const phoneRegex = /^\+\d{1,4}( \d{3}){1,3}$/;
+        const phoneRegex = /^\+\d{1,4} \d{4,}$/;
 
         if(field === "email"){
             return emailRegex.test(value)
@@ -130,7 +130,7 @@ const PersonalInfoForm = ({formData, goNext, updateData, errors, updateErrors}: 
                         type="text" 
                         id="txt-phone"
                         name="phonenumber"
-                        placeholder="e.g. +1 234 567 890"
+                        placeholder="e.g. +123 4567890"
                         defaultValue={formData.phonenumber}
                         onBlur={handleBlur}
                         ref={phoneRef}/>
